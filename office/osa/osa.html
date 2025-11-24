@@ -212,6 +212,10 @@
       overflow: hidden;
     }
 
+  .carousel-container {
+  position: relative;
+  overflow: hidden;
+  }
     .card-shine::before {
       content: '';
       position: absolute;
@@ -227,6 +231,27 @@
     .card-shine:hover::before {
       left: 100%;
     }
+
+    
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  will-change: transform;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+}
+
+/* Parallax effect for carousel */
+@media (min-width: 768px) {
+  .carousel-slide {
+    transform: translateY(var(--parallax-offset, 0));
+  }
+}
 
     /* Pointing arrow animation */
     @keyframes pointAtButton {
@@ -275,13 +300,45 @@
         <span class="font-semibold text-white">Back</span>
       </button>
       <!-- Background with parallax effect -->
-      <div class="absolute inset-0">
-        <img src="assets/image.png"
-             alt="Department cover" 
-             class="w-full h-full object-cover scale-105" 
-             style="filter: brightness(0.95) contrast(1.05);" />
-        <div class="absolute inset-0 cover-gradient"></div>
-      </div>
+<div class="absolute inset-0 carousel-container">
+  <img src="assets/cheerleading.jpg"
+       alt="Department cover 1" 
+       class="carousel-slide active w-full h-full object-cover" 
+       style="filter: brightness(0.95) contrast(1.05);" />
+  <img src="assets/cmo.png"
+       alt="Department cover 2" 
+       class="carousel-slide w-full h-full object-cover" 
+       style="filter: brightness(0.95) contrast(1.05);" />
+  <img src="assets/DSC_2269.JPG"
+       alt="Department cover 3" 
+       class="carousel-slide w-full h-full object-cover" 
+       style="filter: brightness(0.95) contrast(1.05);" />
+  <img src="assets/IMG-ab207951a2ee79dd14d368f743c8257e-V.jpg"
+       alt="Department cover 3" 
+       class="carousel-slide w-full h-full object-cover" 
+       style="filter: brightness(0.95) contrast(1.05);" />
+  <img src="assets/jobfair1.jpg"
+       alt="Department cover 3" 
+       class="carousel-slide w-full h-full object-cover" 
+       style="filter: brightness(0.95) contrast(1.05);" />
+  <img src="assets/ricohizon3.jpg"
+       alt="Department cover 3" 
+       class="carousel-slide w-full h-full object-cover" 
+       style="filter: brightness(0.95) contrast(1.05);" />
+   <img src="assets/songwritingworkshop4.jpg"
+       alt="Department cover 3" 
+       class="carousel-slide w-full h-full object-cover" 
+       style="filter: brightness(0.95) contrast(1.05);" />
+     <img src="assets/songwritingworkshop5.jpg"
+       alt="Department cover 3" 
+       class="carousel-slide w-full h-full object-cover" 
+       style="filter: brightness(0.95) contrast(1.05);" />
+     <img src="assets/taekwondo2.jpg"
+       alt="Department cover 3" 
+       class="carousel-slide w-full h-full object-cover" 
+       style="filter: brightness(0.95) contrast(1.05);" />
+  <div class="absolute inset-0 cover-gradient"></div>
+</div>
 
       <!-- Profile content -->
       <div class="relative h-full flex flex-col justify-end px-6 sm:px-10 pb-8">
@@ -510,6 +567,18 @@ The Office of the Student Affairs is headed by the Office of the Student Affairs
   </div>
 
   <script>
+
+      const slides = document.querySelectorAll('.carousel-slide');
+  let currentSlide = 0;
+
+  function nextSlide() {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+  }
+
+  // Auto-advance every 3 seconds
+  setInterval(nextSlide, 3000);
     // Tab switching functionality
     const tabBtns = document.querySelectorAll('.tab-btn');
     const tabContents = document.querySelectorAll('.tab-content');

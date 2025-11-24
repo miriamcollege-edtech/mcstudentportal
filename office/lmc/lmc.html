@@ -341,6 +341,11 @@
               Reservation
             </button>
 
+             <button class="tab-btn px-4 py-2.5 rounded-xl text-gray-600 hover:text-mcgreen hover:bg-white/40 transition-all focus-ring" 
+                    data-tab="services" role="tab">
+              Services
+            </button>
+
           </div>
         </div>
       </nav>
@@ -365,6 +370,122 @@ The HEU Library Media Center is committed to supporting students in their academ
             </div>
           </section>
 
+<section id="services" class="tab-content hidden" role="tabpanel">
+  <div class="glass-card rounded-3xl p-6 sm:p-8">
+    <h2 class="text-3xl font-bold text-mcgreen mb-6">List of Services</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      
+      <!-- Service Card 1: Reference Service -->
+      <div class="glass-strong rounded-2xl p-5 transition-all flex flex-col">
+        <div class="w-12 h-12 rounded-xl bg-mcgreen/10 flex items-center justify-center mb-3">
+          <svg class="w-6 h-6 text-mcgreen" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </div>
+        <h3 class="font-bold text-gray-900 text-lg mb-2">Reference Service</h3>
+        <p class="text-sm text-gray-600 mb-4 flex-grow">Seek help, assistance or clarifications from any LMC staff in person, contact by phone during library hours, or send inquiries via email and social media.</p>
+        <a href="https://sites.google.com/mc-knoller.edu.ph/mcheulmc/services/reference" target="_blank" 
+           class="block px-4 py-2 rounded-xl text-mcgreen font-semibold text-sm text-center border-2 border-mcgreen hover:bg-mcgreen hover:text-white transition-all">
+          View Details
+        </a>
+      </div>
+
+      <!-- Service Card 2: Library Orientation and Instruction -->
+      <div class="glass-strong rounded-2xl p-5 hover:shadow-lg transition-all card-shine flex flex-col">
+        <div class="w-12 h-12 rounded-xl bg-mcgreen/10 flex items-center justify-center mb-3">
+          <svg class="w-6 h-6 text-mcgreen" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+          </svg>
+        </div>
+        <h3 class="font-bold text-gray-900 text-lg mb-2">Library Orientation and Instruction</h3>
+        <p class="text-sm text-gray-600 mb-4 flex-grow">At the start of each school year, the LMC gives first-year students a library tour while others are given a lecture on research preparation. Additional sessions are offered upon request.</p>
+        <a href="https://sites.google.com/mc-knoller.edu.ph/mcheulmc/services/library-orientation-and-instruction" target="_blank" 
+           class="block px-4 py-2 rounded-xl text-mcgreen font-semibold text-sm text-center border-2 border-mcgreen hover:bg-mcgreen hover:text-white transition-all">
+          View Details
+        </a>
+      </div>
+
+      <!-- Service Card 3: Bibliography -->
+      <div class="glass-strong rounded-2xl p-5 hover:shadow-lg transition-all card-shine flex flex-col">
+        <div class="w-12 h-12 rounded-xl bg-mcgreen/10 flex items-center justify-center mb-3">
+          <svg class="w-6 h-6 text-mcgreen" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+          </svg>
+        </div>
+        <h3 class="font-bold text-gray-900 text-lg mb-2">Bibliography</h3>
+        <p class="text-sm text-gray-600 mb-4 flex-grow">Lists of bibliographical references will be compiled on a requested course using the materials available in the library, and given to requestors.</p>
+        <a href="https://sites.google.com/mc-knoller.edu.ph/mcheulmc/services/bibliography" target="_blank" 
+           class="block px-4 py-2 rounded-xl text-mcgreen font-semibold text-sm text-center border-2 border-mcgreen hover:bg-mcgreen hover:text-white transition-all">
+          View Details
+        </a>
+      </div>
+
+      <!-- Service Card 4: Referral Service -->
+      <div class="glass-strong rounded-2xl p-5 hover:shadow-lg transition-all card-shine flex flex-col">
+        <div class="w-12 h-12 rounded-xl bg-mcgreen/10 flex items-center justify-center mb-3">
+          <svg class="w-6 h-6 text-mcgreen" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"/>
+          </svg>
+        </div>
+        <h3 class="font-bold text-gray-900 text-lg mb-2">Referral Service</h3>
+        <p class="text-sm text-gray-600 mb-4 flex-grow">Students may request a referral letter from the HEU LMC Supervisor to use other libraries in their research work.</p>
+        <a href="https://sites.google.com/mc-knoller.edu.ph/mcheulmc/services/referral" target="_blank" 
+           class="block px-4 py-2 rounded-xl text-mcgreen font-semibold text-sm text-center border-2 border-mcgreen hover:bg-mcgreen hover:text-white transition-all">
+          View Details
+        </a>
+      </div>
+
+      <!-- Service Card 5: Document Delivery Service -->
+      <div class="glass-strong rounded-2xl p-5 hover:shadow-lg transition-all card-shine flex flex-col">
+        <div class="w-12 h-12 rounded-xl bg-mcgreen/10 flex items-center justify-center mb-3">
+          <svg class="w-6 h-6 text-mcgreen" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
+          </svg>
+        </div>
+        <h3 class="font-bold text-gray-900 text-lg mb-2">Document Delivery Service</h3>
+        <p class="text-sm text-gray-600 mb-4 flex-grow">Copies of journal articles, parts of a thesis, and book chapters are provided to users, subject to copyright restrictions.</p>
+        <a href="https://sites.google.com/mc-knoller.edu.ph/mcheulmc/services/online-document-delivery" target="_blank" 
+           class="block px-4 py-2 rounded-xl text-mcgreen font-semibold text-sm text-center border-2 border-mcgreen hover:bg-mcgreen hover:text-white transition-all">
+          View Details
+        </a>
+      </div>
+
+      <!-- Service Card 6: Electronic Resources Access -->
+      <div class="glass-strong rounded-2xl p-5 hover:shadow-lg transition-all card-shine flex flex-col">
+        <div class="w-12 h-12 rounded-xl bg-mcgreen/10 flex items-center justify-center mb-3">
+          <svg class="w-6 h-6 text-mcgreen" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          </svg>
+        </div>
+        <h3 class="font-bold text-gray-900 text-lg mb-2">Electronic Resources Access</h3>
+        <p class="text-sm text-gray-600 mb-4 flex-grow">Students are allowed to search the Internet and access LMC's electronic resources, free of charge.</p>
+        <a href="https://sites.google.com/mc-knoller.edu.ph/mcheulmc/resources/e-resources" target="_blank" 
+           class="block px-4 py-2 rounded-xl text-mcgreen font-semibold text-sm text-center border-2 border-mcgreen hover:bg-mcgreen hover:text-white transition-all">
+          View Details
+        </a>
+      </div>
+
+      <!-- Service Card 7: AV Services -->
+      <div class="glass-strong rounded-2xl p-5 hover:shadow-lg transition-all card-shine flex flex-col">
+        <div class="w-12 h-12 rounded-xl bg-mcgreen/10 flex items-center justify-center mb-3">
+          <svg class="w-6 h-6 text-mcgreen" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+          </svg>
+        </div>
+        <h3 class="font-bold text-gray-900 text-lg mb-2">AV Services</h3>
+        <p class="text-sm text-gray-600 mb-4 flex-grow">The LMC maintains and provides a variety of AV materials, equipment and facilities for students, faculty members and administrators. It also provides photo and video documentation service.</p>
+        <a href="https://sites.google.com/mc-knoller.edu.ph/mcheulmc/services/av-services" target="_blank" 
+           class="block px-4 py-2 rounded-xl text-mcgreen font-semibold text-sm text-center border-2 border-mcgreen hover:bg-mcgreen hover:text-white transition-all">
+          View Details
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 <section id="documents" class="tab-content hidden" role="tabpanel">
   <div class="glass-card rounded-3xl p-6 sm:p-8">
     <h2 class="text-3xl font-bold text-mcgreen mb-2">Room Reservations</h2>
@@ -379,7 +500,7 @@ The HEU Library Media Center is committed to supporting students in their academ
         </div>
         <button data-modal="modalRoom1"
           class="btn-primary px-4 py-2 rounded-xl text-white font-semibold text-sm">
-          Book a Reservation
+          Check Open Timeslots
         </button>
       </div>
 
@@ -391,7 +512,7 @@ The HEU Library Media Center is committed to supporting students in their academ
         </div>
         <button data-modal="modalRoom2"
           class="btn-primary px-4 py-2 rounded-xl text-white font-semibold text-sm">
-          Book a Reservation
+          Check Open Timeslots
         </button>
       </div>
 
@@ -423,7 +544,6 @@ The HEU Library Media Center is committed to supporting students in their academ
   </div>
 
 </section>
-
       
 
  
